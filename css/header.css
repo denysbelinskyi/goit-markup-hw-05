@@ -1,0 +1,82 @@
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header .logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+  margin-right: 76px;
+}
+.header .logo-part {
+  color: #4d5ae5;
+}
+
+.header .headbuttons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  padding: 24px 0;
+  display: block;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header .infolinks {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  padding: 24px 0;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header .headbuttons:hover,
+.header .headbuttons:focus {
+  color: #404bbf;
+}
+
+.header .headbuttons.featuresbutton {
+  color: #404bbf;
+}
+
+.header .headbuttons.featuresbutton::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+}
+
+.header .infolinks:hover,
+.header .infolinks:focus {
+  color: #404bbf;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .headlist {
+  display: flex;
+  gap: 40px;
+  margin-right: 340px;
+}
+
+.header .headinfo {
+  display: flex;
+  gap: 40px;
+}
