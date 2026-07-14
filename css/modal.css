@@ -10,14 +10,16 @@
   justify-content: center;
   align-items: center;
 
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
   transition: opacity 250ms ease-in-out;
 }
 
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .modal {
@@ -54,10 +56,19 @@
   right: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal .xbutton:hover {
+.xsvgbutton {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.xbutton:hover .xsvgbutton,
+.xbutton:focus .xsvgbutton {
+  fill: #fff;
+}
+.modal .xbutton:hover,
+.modal .xbutton:focus {
   background-color: #404bbf;
   border: none;
-  fill: #fff;
+
   cursor: pointer;
 }
 
@@ -81,6 +92,7 @@
   height: 40px;
   max-width: 360px;
   min-height: 40px;
+  background-color: transparent;
 }
 
 .inputplussvg {
@@ -114,6 +126,7 @@
   resize: none;
   outline: transparent;
   margin-bottom: 16px;
+  background-color: transparent;
 }
 .contactformfieldsinputcomment::placeholder {
   color: rgba(46, 47, 66, 0.4);
@@ -218,7 +231,8 @@
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sendbutton:active {
+.sendbutton:hover,
+.sendbutton:focus {
   background-color: #404bbf;
 }
 
@@ -237,6 +251,10 @@
 }
 
 .contactformfieldsinputcomment {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contactformfieldsinputcomment:focus {
