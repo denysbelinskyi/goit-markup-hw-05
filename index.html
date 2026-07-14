@@ -498,7 +498,7 @@
       </div>
     </footer>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay" id="modal">
       <div class="modal">
         <div class="contactform">
           <button type="submit" class="xbutton">
@@ -512,56 +512,54 @@
             name="fieldsfordata"
             autocomplete="off"
           >
-            <label class="contactformfieldslabel">
-              Name
-              <div class="inputplussvg">
-                <input
-                  class="contactformfieldsinput"
-                  type="text"
-                  name="username"
-                />
-                <svg class="nameformsvg" height="12" width="12">
-                  <use href="./images/icons.svg#icon-fornamefield"></use>
-                </svg>
-              </div>
-            </label>
+            <label for="username" class="contactformfieldslabel"> Name </label>
+            <div class="inputplussvg">
+              <input
+                id="username"
+                class="contactformfieldsinput"
+                type="text"
+                name="username"
+              />
+              <svg class="nameformsvg" height="12" width="12">
+                <use href="./images/icons.svg#icon-fornamefield"></use>
+              </svg>
+            </div>
 
-            <label class="contactformfieldslabel">
-              Phone
-              <div class="inputplussvg">
-                <input
-                  class="contactformfieldsinput"
-                  type="tel"
-                  name="phonenumber"
-                />
-                <svg class="nameformsvg" height="13" width="13">
-                  <use href="./images/icons.svg#icon-forphonefield"></use>
-                </svg>
-              </div>
-            </label>
+            <label for="phonenumber" class="contactformfieldslabel"
+              >Phone</label
+            >
+            <div class="inputplussvg">
+              <input
+                id="phonenumber"
+                class="contactformfieldsinput"
+                type="tel"
+                name="phonenumber"
+              />
+              <svg class="nameformsvg" height="13" width="13">
+                <use href="./images/icons.svg#icon-forphonefield"></use>
+              </svg>
+            </div>
 
-            <label class="contactformfieldslabel">
-              Email
-              <div class="inputplussvg">
-                <input
-                  class="contactformfieldsinput"
-                  type="email"
-                  name="email"
-                />
-                <svg class="nameformsvg" height="12" width="15">
-                  <use href="./images/icons.svg#icon-foremailfield"></use>
-                </svg>
-              </div>
-            </label>
+            <label for="email" class="contactformfieldslabel">Email</label>
+            <div class="inputplussvg">
+              <input
+                id="email"
+                class="contactformfieldsinput"
+                type="email"
+                name="email"
+              />
+              <svg class="nameformsvg" height="12" width="15">
+                <use href="./images/icons.svg#icon-foremailfield"></use>
+              </svg>
+            </div>
 
-            <label class="contactformfieldslabel">
-              Comment
-              <textarea
-                class="contactformfieldsinputcomment"
-                name="comment"
-                placeholder="Text input"
-              ></textarea>
-            </label>
+            <label for="comment" class="contactformfieldslabel">Comment</label>
+            <textarea
+              id="comment"
+              class="contactformfieldsinputcomment"
+              name="comment"
+              placeholder="Text input"
+            ></textarea>
 
             <div class="privacy-field">
               <input

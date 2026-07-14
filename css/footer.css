@@ -28,13 +28,7 @@
 
 .footer .container {
   display: flex;
-}
-
-.footer .logoandtext {
-  margin-right: 120px;
-}
-.footer .footertextandlinks {
-  margin-right: 83px;
+  justify-content: space-between;
 }
 
 .footer .textsocialmedia {
@@ -87,6 +81,9 @@
 .footer .footerfield {
   border: 1px solid #fff;
   color: #fff;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
   border-radius: 4px;
   padding-block: 8px;
   padding-inline: 16px;
@@ -94,7 +91,7 @@
   height: 40px;
   background-color: transparent;
   outline: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .footerfield:focus {
@@ -104,7 +101,7 @@
 .footer .footerfield::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
 }
@@ -112,6 +109,10 @@
 .footer .subscribebutton {
   width: 165px;
   height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +129,8 @@
   fill: #fff;
 }
 
-.footer .subscribebutton:hover {
+.footer .subscribebutton:hover,
+.footer .subscribebutton:focus {
   background-color: #31d0aa;
 }
 
