@@ -28,7 +28,6 @@
 
 .footer .container {
   display: flex;
-  justify-content: space-between;
 }
 
 .footer .textsocialmedia {
@@ -153,5 +152,4 @@
 .footer .form {
   display: flex;
   gap: 24px;
-  align-items: flex-end;
 }
